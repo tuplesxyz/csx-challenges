@@ -1,7 +1,15 @@
 function addingAllTheWeirdStuff(array1, array2) {
   // ADD CODE HERE
-  let sumOdd = array2.filter((x) => x % 2 === 1).reduce((a, b) => a + b, 0);
-  let sumEven = array2.filter((x) => x % 2 === 0).reduce((a, b) => a + b, 0);
+  let sumOdd = 0;
+  let sumEven = 0;
+
+  array2.forEach((a, i) => {
+    if (a % 2 === 1) {
+      sumOdd += a;
+    } else if (a % 2 === 0) {
+      sumEven += a;
+    }
+  });
 
   array1 = array2.some((x) => x > 20)
     ? (array1 = [...array1.map((x) => x + 1)])
