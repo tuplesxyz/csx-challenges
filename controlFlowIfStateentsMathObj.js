@@ -8,4 +8,4 @@ function closestToTheMark(player1, player2) {
 }
 
 // Uncomment the line below to check your work!
-// console.log(closestToTheMark(25, 75));
+console.log(closestToTheMark(25, 75));
